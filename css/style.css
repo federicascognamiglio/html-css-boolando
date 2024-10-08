@@ -25,8 +25,8 @@ body {
 
 /* UTILITIES */
 
-.pad-vert-20 {
-    padding: 20px 0;
+.pad-vert-50 {
+    padding: 50px 0;
 }
 
 /* Colors */
@@ -40,23 +40,24 @@ body {
 
 /* Typography */
 .text-small {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     font-weight: 300;
 }
 
 
 .text-regular {
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 
 .text-red {
     color: var(--color-red);
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .text-line-through {
     text-decoration: line-through;
+    color: #000000;
 }
 
 /* COMMON */
@@ -68,14 +69,59 @@ body {
 
     /* debug */
     border: 1px solid #000000;
+    min-height: 500px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+.col {
+    width: calc(95% / 3);
+}
+
+.card {
+    position: relative;
+}
+
+.col img {
+    display: block;
+}
+
+.caption {
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+/* Tags */
+.tag {
+    padding: .2em .5em;
+    position: absolute;
+    bottom: 80px;
 }
 
 .tag-red {
     background-color: var(--color-red);
     color: var(--color-white);
+    left: 0;
 }
 
 .tag-green {
     background-color: var(--color-green);
     color: var(--color-white);
+    left: 38px;
+}
+
+.heart-box {
+    background-color: var(--color-white);
+    padding: .4em .6em;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    text-align: center;
 }
