@@ -179,3 +179,28 @@ body {
 .card:hover .img-back {
     z-index: 0;
 }
+
+/* Footer */
+
+.footer {
+    padding: 20px 0;
+    background-color: var(--footer-bg);
+    color: var(--color-white);
+}
+
+.footer-elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta {
+    font-weight: 700;
+}
+
+.footer-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 5px;
+}
