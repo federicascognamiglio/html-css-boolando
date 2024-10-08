@@ -63,10 +63,6 @@ body {
     margin: 0 auto;
 }
 
-.main {
-    padding: 50px 0;
-}
-
 .row {
     display: flex;
     justify-content: space-between;
@@ -91,6 +87,42 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1px;
+}
+
+/* Header */
+.header {
+    height: 50px;
+    box-shadow: 1px 1px 5px #452500;
+    color: var(--color-white);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background-color: var(--header-bg);
+}
+
+.nav-bar {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100px;
+}
+
+.logo {
+   max-width: 10%;
+}
+
+
+/* Main */
+.main {
+    padding: 100px 0;
 }
 
 /* Tags */
